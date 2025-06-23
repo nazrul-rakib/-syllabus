@@ -1,0 +1,129 @@
+
+    :root{
+      --brandA:#0f2379;   /* Company A primary colour  */
+      --brandB:#ff8800;   /* Company B primary colour  */
+      --grayBg:#f5f7fa;
+      --radius:12px;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      font-family:Helvetica, Arial, sans-serif;
+      background:var(--grayBg);
+      line-height:1.5;
+      color:#222;
+    }
+    h1{text-align:center;margin:2rem 0 1rem}
+    section{
+      padding:2rem 1rem;
+    }
+
+    /* ------- Card grid ------- */
+    .grid{
+      display:grid;
+      gap:1rem;
+      grid-template-columns:repeat(auto-fill, minmax(220px,1fr));
+      margin-top:1rem;
+    }
+    .card{
+      background:#fff;
+      border-radius:var(--radius);
+      padding:1.2rem;
+      box-shadow:0 2px 6px rgba(0,0,0,.08);
+      transition:.25s;
+    }
+    .card:hover{transform:translateY(-4px);box-shadow:0 6px 14px rgba(0,0,0,.12)}
+    .card h3{font-size:1.1rem;margin-bottom:.4rem}
+    .card a{
+      display:inline-block;
+      margin-top:.6rem;
+      padding:.5rem 1rem;
+      background:#444;
+      color:#fff;
+      text-decoration:none;
+      border-radius:6px;
+      font-size:.9rem;
+    }
+
+    /* ------- Company-specific accents ------- */
+    .companyA   .card h3{color:var(--brandA)}
+    .companyA   .card a {background:var(--brandA)}
+    .companyB   .card h3{color:var(--brandB)}
+    .companyB   .card a {background:var(--brandB)}
+
+    /* ------- Footer ------- */
+    footer{
+      background:#111;
+      color:#ddd;
+      text-align:center;
+      padding:1.2rem .8rem;
+      font-size:.9rem;
+      margin-top:2rem;
+    }
+    footer a{color:#ffcc66;text-decoration:none}
+     
+  .icon{
+  display:flex;
+  margin-top: 10px;
+  justify-content: center;
+}
+.icon1{
+  width:30px;
+  height:30px;
+  color: #176ad8;
+  display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+}
+.icon1,
+.icon2,
+.icon3{
+    background-color: #fff;
+  margin: 5px;
+}
+.icon2{
+  width:30px;
+  height:30px;
+  color: #176ad8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.icon3{
+  width:30px;
+  height:30px;
+  display: flex;
+  justify-content: center;
+  color: #2ab35c;
+  align-items: center;
+  border-radius: 50%;
+}
+.icon1 i{
+    color: #1b2eda;
+}
+.icon2 i{
+    color: #1b2eda;
+}.icon3 i{
+    color: #14ac28;
+}
+/*===========================================Whatsap icon service start =================================*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  font-size: 24px;
+  padding: 12px;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  text-align: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.whatsapp-float:hover {
+  background-color: #128C7E;
+}
+/*===========================================Whatsap icon service end =================================*/
